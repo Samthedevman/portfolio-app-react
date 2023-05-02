@@ -3,6 +3,7 @@ import React from 'react'
 import Gallerina from '../assets/Gallerina.png'
 import Github from '../assets/github.png'
 import Live from "../assets/live.png"
+import MotivationalAppImg from "../assets/final.gif"
 
 const Projects = () => {
   const project1 = {
@@ -17,7 +18,9 @@ const Projects = () => {
       'React, Javascript, Typescript, Tailwind, Knex, Redux, Express, Node.js ',
   }
 
-  // const project2 = {}
+  const project2 = {
+    image: MotivationalAppImg
+  }
 
   return (
     <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
@@ -55,7 +58,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-20 mt-20">
-          <img className="rounded-md" src={project1.image} alt="gallerinaimg" />
+          <img className="w-auto h-96" src={project2.image} alt="gallerinaimg" />
           <div>
             <div className='grid grid-cols-2'>
               <div>
