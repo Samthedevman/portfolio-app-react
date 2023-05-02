@@ -10,7 +10,7 @@ const Projects = () => {
     name: 'Gallerina',
     image: Gallerina,
     summary:
-      'This was a final group project during the last week of Dev Academy. The site fetches artwork from an external API, allowing a user to curate a collection. The site utilizes auth0 for authenication. Users can create a collection and add artwork to it. They can also rename, delete the collection, aswell as add notes to individual artworks within a collection.',
+      'This was a final group project during the last week of Dev Academy Aotearoa. The site fetches artwork from an external API, allowing a user to curate a collection. The site utilizes auth0 for authenication. Users can create a collection and add artwork to it. They can also rename, delete the collection, aswell as add notes to individual artworks within a collection.',
     github: 'https://github.com/tohora-2023/Gallerina',
     live: '',
     techstack:
