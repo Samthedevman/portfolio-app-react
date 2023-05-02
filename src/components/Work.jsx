@@ -1,6 +1,8 @@
 import React from 'react'
-// import { data } from '../data/data.js'
+
 import Gallerina from '../assets/Gallerina.png'
+import Github from '../assets/github.png'
+import Live from "../assets/live.png"
 
 const Projects = () => {
   const project1 = {
@@ -8,9 +10,11 @@ const Projects = () => {
     name: 'Gallerina',
     image: Gallerina,
     summary:
-      'This was a final group project during the last week of Dev Academy. This site utilizes Auth0 for authentication. It fetches artwork from an external API, which a user can then curate a collection',
+      'This was a final group project during the last week of Dev Academy. The site fetches artwork from an external API, allowing a user to curate a collection. The site utilizes auth0 for authenication. Users can create a collection and add artwork to it. They can also rename, delete the collection, aswell as add notes to individual artworks within a collection.',
     github: 'https://github.com/tohora-2023/Gallerina',
     live: '',
+    techstack:
+      'React, Javascript, Typescript, Tailwind, Knex, Redux, Express, Node.js ',
   }
 
   const project2 = {}
@@ -26,11 +30,52 @@ const Projects = () => {
         </div>
 
         {/* container for projects */}
-        <div className="grid grid-cols-2 items-center gap-20 pt-10 pb-10">
-          <img src={project1.image} alt="gallerinaimg" />
+        <div className="grid grid-cols-2 gap-20">
+          <img className="rounded-md" src={project1.image} alt="gallerinaimg" />
           <div>
-            <p>{project1.name}</p>
-            <p>{project1.summary}</p>
+            <div className='grid grid-cols-2'>
+              <div>
+              <p className="mb-5 text-2xl font-bold">{project1.name}</p>
+              </div>
+              <div className='flex justify-end space-x-5'>
+              <a href={project1.github}>
+                
+              <img className="h-auto w-8" src={Github} alt="github" />
+            </a>
+
+            <a href={project1.live}>
+            <img className="h-auto w-8" src={Live} alt="live" />
+            </a>
+            </div>
+            </div>
+            <p className="mb-5 text-l font-bold">Full Stack Developer</p>
+            <p className="mb-5">{project1.summary}</p>
+            <p className="mb-1 text-l font-bold">Tech Stack</p>
+            <p className="mb-5">{project1.techstack}</p>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 gap-20 mt-20">
+          <img className="rounded-md" src={project1.image} alt="gallerinaimg" />
+          <div>
+            <div className='grid grid-cols-2'>
+              <div>
+              <p className="mb-5 text-2xl font-bold">{project1.name}</p>
+              </div>
+              <div className='flex justify-end space-x-5'>
+              <a href={project1.github}>
+                
+              <img className="h-auto w-8" src={Github} alt="github" />
+            </a>
+
+            <a href={project1.live}>
+            <img className="h-auto w-8" src={Live} alt="live" />
+            </a>
+            </div>
+            </div>
+            <p className="mb-5 text-l font-bold">Full Stack Developer</p>
+            <p className="mb-5">{project1.summary}</p>
+            <p className="mb-1 text-l font-bold">Tech Stack</p>
+            <p className="mb-5">{project1.techstack}</p>
           </div>
         </div>
       </div>
@@ -39,3 +84,4 @@ const Projects = () => {
 }
 
 export default Projects
+
