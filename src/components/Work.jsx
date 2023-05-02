@@ -17,7 +17,7 @@ const Projects = () => {
       'React, Javascript, Typescript, Tailwind, Knex, Redux, Express, Node.js ',
   }
 
-  const project2 = {}
+  // const project2 = {}
 
   return (
     <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
