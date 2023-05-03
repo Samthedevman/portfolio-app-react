@@ -46,16 +46,16 @@ const Projects = () => {
           />
 
           <div>
-            <div className="grid grid-cols-2">
-              <div>
-                <p className="mb-5 text-2xl font-bold">{project2.name}</p>
-              </div>
-              <div className="flex justify-end space-x-5">
-                <a href={project2.github}>
-                  <img className="h-auto w-8" src={Github} alt="github" />
-                </a>
-              </div>
-            </div>
+          <div className="grid grid-cols-4">
+  <div className="col-span-3">
+    <p className="mb-5 text-2xl font-bold">{project2.name}</p>
+  </div>
+  <div className="col-span-1 flex justify-end space-x-5">
+    <a href={project2.github}>
+      <img className="h-auto w-8" src={Github} alt="github" />
+    </a>
+  </div>
+</div>
             <p className="mb-5 text-l font-bold">{project2.role}</p>
             <p className="mb-5">{project2.summary}</p>
             <p className="mb-1 text-l font-bold">Tech Stack</p>

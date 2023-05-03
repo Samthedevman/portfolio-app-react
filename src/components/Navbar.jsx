@@ -88,6 +88,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      
 
       {/* Social icons */}
       <div className="hidden xl:flex fixed flex-col top-[35%] left-0">
