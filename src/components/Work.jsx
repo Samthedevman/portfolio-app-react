@@ -1,27 +1,9 @@
 import React from 'react'
-
-import Gallerina from '../assets/Gallerina.png'
 import Github from '../assets/github.png'
-import Live from "../assets/live.png"
-import MotivationalAppImg from "../assets/final.gif"
+import Live from '../assets/live.png'
+import { project1, project2 } from '../projectsdata/data'
 
 const Projects = () => {
-  const project1 = {
-    id: 1,
-    name: 'Gallerina',
-    image: Gallerina,
-    summary:
-      'This was a final group project during the last week of Dev Academy Aotearoa. The site fetches artwork from an external API, allowing a user to curate a collection. The site utilizes auth0 for authenication. Users can create a collection and add artwork to it. They can also rename, delete the collection, aswell as add notes to individual artworks within a collection.',
-    github: 'https://github.com/tohora-2023/Gallerina',
-    live: '',
-    techstack:
-      'React, Javascript, Typescript, Tailwind, Knex, Redux, Express, Node.js ',
-  }
-
-  const project2 = {
-    image: MotivationalAppImg
-  }
-
   return (
     <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
@@ -36,20 +18,19 @@ const Projects = () => {
         <div className="grid grid-cols-2 gap-20">
           <img className="rounded-md" src={project1.image} alt="gallerinaimg" />
           <div>
-            <div className='grid grid-cols-2'>
+            <div className="grid grid-cols-2">
               <div>
-              <p className="mb-5 text-2xl font-bold">{project1.name}</p>
+                <p className="mb-5 text-2xl font-bold">{project1.name}</p>
               </div>
-              <div className='flex justify-end space-x-5'>
-              <a href={project1.github}>
-                
-              <img className="h-auto w-8" src={Github} alt="github" />
-            </a>
+              <div className="flex justify-end space-x-5">
+                <a href={project1.github}>
+                  <img className="h-auto w-8" src={Github} alt="github" />
+                </a>
 
-            <a href={project1.live}>
-            <img className="h-auto w-8" src={Live} alt="live" />
-            </a>
-            </div>
+                <a href={project1.live}>
+                  <img className="h-auto w-8" src={Live} alt="live" />
+                </a>
+              </div>
             </div>
             <p className="mb-5 text-l font-bold">Full Stack Developer</p>
             <p className="mb-5">{project1.summary}</p>
@@ -58,27 +39,27 @@ const Projects = () => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-20 mt-20">
-          <img className="w-auto h-96" src={project2.image} alt="gallerinaimg" />
-          <div>
-            <div className='grid grid-cols-2'>
-              <div>
-              <p className="mb-5 text-2xl font-bold">{project1.name}</p>
-              </div>
-              <div className='flex justify-end space-x-5'>
-              <a href={project1.github}>
-                
-              <img className="h-auto w-8" src={Github} alt="github" />
-            </a>
+          <img
+            className="w-auto h-96 mx-auto my-auto rounded-md"
+            src={project2.image}
+            alt="gallerinaimg"
+          />
 
-            <a href={project1.live}>
-            <img className="h-auto w-8" src={Live} alt="live" />
-            </a>
+          <div>
+            <div className="grid grid-cols-2">
+              <div>
+                <p className="mb-5 text-2xl font-bold">{project2.name}</p>
+              </div>
+              <div className="flex justify-end space-x-5">
+                <a href={project2.github}>
+                  <img className="h-auto w-8" src={Github} alt="github" />
+                </a>
+              </div>
             </div>
-            </div>
-            <p className="mb-5 text-l font-bold">Full Stack Developer</p>
-            <p className="mb-5">{project1.summary}</p>
+            <p className="mb-5 text-l font-bold">{project2.role}</p>
+            <p className="mb-5">{project2.summary}</p>
             <p className="mb-1 text-l font-bold">Tech Stack</p>
-            <p className="mb-5">{project1.techstack}</p>
+            <p className="mb-5">{project2.techstack}</p>
           </div>
         </div>
       </div>
@@ -87,4 +68,3 @@ const Projects = () => {
 }
 
 export default Projects
-
