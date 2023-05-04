@@ -5,7 +5,7 @@ import { project1, project2 } from '../projectsdata/data'
 
 const Projects = () => {
   return (
-    <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
+    <div name="work" className="w-full sm:h-3/5 text-gray-300 bg-[#0a192f]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
@@ -20,7 +20,7 @@ const Projects = () => {
           <div>
             <div className="grid grid-cols-2">
               <div>
-                <p className="mb-5 text-2xl font-bold">{project1.name}</p>
+                <p className="mb-5 text-xl font-bold">{project1.name}</p>
               </div>
               <div className="flex justify-end space-x-5">
                 <a href={project1.github}>
@@ -38,7 +38,7 @@ const Projects = () => {
             <p className="mb-5">{project1.techstack}</p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-20 mt-20">
+        <div className="grid grid-cols-2 gap-20 mt-10">
           <img
             className="w-auto h-96 mx-auto my-auto rounded-md"
             src={project2.image}
@@ -48,7 +48,7 @@ const Projects = () => {
           <div>
           <div className="grid grid-cols-4">
   <div className="col-span-3">
-    <p className="mb-5 text-2xl font-bold">{project2.name}</p>
+    <p className="mb-5 text-xl font-bold">{project2.name}</p>
   </div>
   <div className="col-span-1 flex justify-end space-x-5">
     <a href={project2.github}>
