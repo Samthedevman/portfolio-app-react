@@ -1,6 +1,6 @@
 import React from 'react'
 import Github from '../assets/github.png'
-import Live from '../assets/live.png'
+// import Live from '../assets/live.png'
 import { project1, project2 } from '../projectsdata/data'
 
 const Projects = () => {
@@ -27,9 +27,9 @@ const Projects = () => {
                   <img className="h-auto w-8" src={Github} alt="github" />
                 </a>
 
-                <a href={project1.live}>
+                {/* <a href={project1.live}>
                   <img className="h-auto w-8" src={Live} alt="live" />
-                </a>
+                </a> */}
               </div>
             </div>
             <p className="mb-1 text-l font-bold">Full Stack Developer</p>
